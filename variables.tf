@@ -12,7 +12,7 @@ EOT
   type = map(object({
     name                = string
     resource_group_name = string
-    data_location       = optional(string, "United States")
+    data_location       = optional(string) # Default: "United States"
     tags                = optional(map(string))
   }))
 }
